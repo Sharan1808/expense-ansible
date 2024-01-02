@@ -15,7 +15,7 @@
     enabled: yes
 
 - name: Copy Alert Manager Config
-  ansible:builtin.template:
+  ansible.builtin.template:
     src: alertmanager.yml
     dest: /opt/alertmanager/alertmanager.yml
 
