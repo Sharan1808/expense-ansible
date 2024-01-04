@@ -19,7 +19,7 @@
     bucket: d76s-prometheus-alert-rules
     mode: get
     object: "{{item}}"
-    dest: /opt/prometheus/alert-rules/{{item}}
+    dest: /opt/prometheus/alert-rules.yml/{{item}}
   loop: "{{out.s3_keys}}"
 
 - name: Reload Prometheus
