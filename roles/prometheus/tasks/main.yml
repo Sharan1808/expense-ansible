@@ -6,7 +6,7 @@
 - name: Copy Alert Rules
   ansible.builtin.template:
     src: common.yml
-    dest: /opt/prometheus/common.yml
+    dest: /opt/prometheus/alert-rules/common.yml
 
 - name: List All files in Bucket
   amazon.aws.s3_object:
