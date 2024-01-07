@@ -45,7 +45,8 @@
   amazon.aws.s3_object:
     bucket: d76s-prometheus-alert-rules
     object: "{{component}}-{{env}}.yml"
-    file_root: /tmp/{{component}}-{{env}}.yml
+    src: /tmp/{{component}}-{{env}}.yml
+    mode: put
 
 
 
