@@ -39,6 +39,6 @@
 - name: Import Prometheus Role - Alert-Rules-Update
   ansible.builtin.import_role:
     name: prometheus
-    tasks_from: Alert-Rules-Update
+    tasks_from: alert-rules-update
 
 
