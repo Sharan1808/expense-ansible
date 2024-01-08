@@ -15,8 +15,8 @@ groups:
     for: 1m
     labels:
       severity: critical
-      component: { { component } }
-      env: { { env } }
+      component: {{ component }}
+      env: {{ env }}
     annotations:
       summary: Critical | CPU Usage Alert
   - alert: MemoryUsageAlertCritical
